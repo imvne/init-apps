@@ -1,11 +1,12 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
 	return (
 		<FooterContainer>
 			<Line />
 			<ContactInfo>
-				<Mail href='mailto:imanebeaufils@gmail.com' target='_blank'>
+				<Mail href='mailto:contact@initapps.fr' target='_blank'>
 					contact@initapps.fr
 				</Mail>
 				{/* <Links>
@@ -17,7 +18,15 @@ export default function Footer() {
 					<a href='https://www.linkedin.com/in/imanebeaufils/' target='_blank'></a>
 				</Icons>
 			</ContactInfo>
-			<Copyright>init apps. ©2025</Copyright>
+			<LegalTexts>
+				<Copyright>init apps. ©2025</Copyright>
+				<StyledLink as={Link} to='/mentions-legales'>
+					Mentions légales
+				</StyledLink>
+				<StyledLink as={Link} to='/politique-confidentialite'>
+					Politique de confidentialité
+				</StyledLink>
+			</LegalTexts>
 		</FooterContainer>
 	)
 }
@@ -44,9 +53,11 @@ const ContactInfo = styled.div`
 `
 
 const Mail = styled.a`
-	font-family: 'Epilogue', sans-serif;
-	color: #612a14;
+	font-family: 'League Spartan', sans-serif;
+	color: #180b2c;
 	font-size: 25px;
+	font-weight: bold;
+	letter-spacing: -1.5px;
 	text-decoration: none;
 	opacity: 70%;
 
@@ -64,19 +75,20 @@ const Links = styled.div`
 
 const StyledLink = styled.a`
 	text-decoration: none;
-	font-size: 18px;
+	font-size: 13px;
 	opacity: 80%;
-	color: #612a14;
-	font-family: 'Epilogue', sans-serif;
-	margin: 8px 20px 12px 0px;
+	color: #8c95b8;
+	font-family: 'League Spartan', sans-serif;
+	margin: 10px;
 	cursor: pointer;
+	line-height: 1;
 
 	&:hover {
 		opacity: 60%;
 	}
 
 	@media (min-width: 768px) {
-		font-size: 25px;
+		font-size: 15px;
 	}
 `
 
@@ -88,8 +100,15 @@ const Icons = styled.div`
 `
 
 const Copyright = styled.p`
-	font-family: 'Epilogue', sans-serif;
+	font-family: 'League Spartan', sans-serif;
 	opacity: 80%;
-	font-size: 13px;
+	font-size: 17px;
 	margin: 10px;
+	line-height: 1;
+`
+
+const LegalTexts = styled.div`
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
 `
