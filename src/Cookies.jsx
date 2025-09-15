@@ -14,13 +14,23 @@ export default function Cookies() {
 			<Content>
 				<Title>Cookies</Title>
 				<p>
-					Notre site ne place pas de cookies directement. Cependant, le widget Calendly utilisé pour
-					la prise de rendez-vous peut placer des cookies sur votre appareil. Ces cookies servent
-					uniquement à : Assurer le bon fonctionnement du widget. Gérer la session et vérifier la
-					disponibilité des créneaux. Traiter les informations que vous saisissez pour prendre un
-					rendez-vous (prénom, nom, adresse email, numéro de téléphone, détails du rendez-vous). Les
-					données collectées via ces cookies sont traitées par Calendly conformément à leur
-					politique de confidentialité : https://calendly.com/privacy{' '}
+					Notre site n'utilise pas directement de cookies. Cependant, le widget Calendly utilisé
+					pour la prise de rendez-vous peut placer des cookies sur votre appareil.
+				</p>
+				<p>
+					Ces cookies servent uniquement à :<li>Assurer le bon fonctionnement du widget.</li>
+					<ul>
+						<li>Gérer la session et vérifier la disponibilité des créneaux.</li>
+						<li>
+							Traiter les informations que vous saisissez pour prendre un rendez-vous
+							(prénom, nom, adresse email, numéro de téléphone, détails du rendez-vous).
+						</li>
+					</ul>
+				</p>
+				<p>
+					Les données collectées via ces cookies sont traitées par Calendly conformément à leur
+					politique de confidentialité :{' '}
+					<a href='https://calendly.com/privacy'>https://calendly.com/privacy</a>
 				</p>
 			</Content>
 		</Container>
@@ -48,6 +58,10 @@ const Content = styled.div`
 	border-radius: 8px;
 	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 	margin-top: 50px;
+
+	li {
+		margin-left: 30px;
+	}
 
 	@media (min-width: 768px) {
 		margin-top: 40px;
