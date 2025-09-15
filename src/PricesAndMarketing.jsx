@@ -20,8 +20,7 @@ export default function Prices() {
 				color2={'#5ce1e6'}
 			/> */}
 			<Phrase>
-				Votre MVP prêt <u>en 4 semaines</u>
-				<br /> pour <b>1500€.</b>
+				Votre MVP prêt <u>en 4 semaines</u> pour <b>1500€.</b>
 			</Phrase>
 			<Arguments>
 				<Question>
@@ -77,7 +76,7 @@ const Phrase = styled.h3`
 	@media (min-width: 768px) {
 		font-size: 50px;
 		line-height: 60px;
-		width: 70%;
+		width: 57%;
 		margin-top: 50px;
 	}
 `
