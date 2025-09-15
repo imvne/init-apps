@@ -1,7 +1,5 @@
 import styled from 'styled-components'
-import Header from './Header'
-import Footer from './Footer'
-import GrainRect from './assets/grainRect'
+import theme from './theme'
 
 export default function OurMethod() {
 	const svgBackground = `url("data:image/svg+xml,${encodeURIComponent(`
@@ -30,6 +28,7 @@ export default function OurMethod() {
 
 	return (
 		<OurMethodContainer>
+			<SectionTitle>Notre méthode</SectionTitle>
 			<Intro>
 				<p>
 					Notre méthode vous accompagne pour transformer votre idée en MVP (Minimum Viable Product)
@@ -181,14 +180,32 @@ const OurMethodContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	z-index: 3;
+	width: 100%;
+`
+
+const SectionTitle = styled.h2`
+	font-family: 'Epilogue', sans-serif;
+	margin-top: 50px;
+	color: ${theme.colors.darkBlue3};
+	font-variation-settings: 'wght' 600;
+	font-size: 20px;
+
+	@media (min-width: 768px) {
+		margin-top: 50px;
+		font-variation-settings: 'wght' 600;
+		text-align: left;
+		width: 70%;
+		font-size: 26px;
+	}
 `
 
 const Intro = styled.div`
 	font-family: 'Epilogue', sans-serif;
 	width: 80%;
-	margin: 30px 0px;
+	margin: 10px 0px 30px 0px;
 	text-align: justify;
-	color: #612a14;
+	color: ${theme.colors.brown2};
 	font-size: 15px;
 
 	p {
@@ -199,7 +216,7 @@ const Intro = styled.div`
 		width: 60%;
 		font-size: 20px;
 		p {
-			margin: 50px 0px;
+			margin: 30px 0px;
 		}
 	}
 `
@@ -226,8 +243,8 @@ const Number = styled.h2`
 	font-variation-settings: 'wght' 800;
 	font-size: 40px;
 	font-style: bold;
-	color: #3a0b45;
-	border-bottom: 3px solid #3a0b45;
+	color: ${theme.colors.darkBlue3};
+	border-bottom: 3px solid ${theme.colors.darkBlue3};
 	line-height: 50px;
 
 	@media (min-width: 768px) {
@@ -240,7 +257,7 @@ const Title = styled.h3`
 	font-family: 'League Spartan';
 	font-size: 20px;
 	font-style: bold;
-	color: #451c0b;
+	color: ${theme.colors.darkBlue3};
 	margin: 20px 0px 20px 10px;
 
 	@media (min-width: 768px) {
