@@ -3,32 +3,19 @@ import Footer from './Footer'
 import OurMethod from './OurMethod.jsx'
 import GrainSvg from './assets/grain'
 import Form from './Form.jsx'
+import PricesAndMarketing from './PricesAndMarketing.jsx'
 
 export default function App() {
 	return (
 		<AppContainer>
 			<Logo>init apps.</Logo>
 			<Tagline>
-				{/* <RondBackground>
-					<svg
-						width='100%'
-						height='100%'
-						viewBox='0 0 297 171'
-						fill='none'
-						preserveAspectRatio='none'>
-						<path
-							d='M147.602 6.7331C107.403 -10.1906 7.35269 21.4965 3.26541 46.8725C-13.4467 150.63 105.486 167.317 182.137 169.53C277.307 169.53 307.03 117.259 292.23 57.8241C277.755 -0.302039 193.054 25.8687 147.602 6.7331Z'
-							stroke='#612A14'
-							strokeOpacity='0.2'
-							strokeWidth='2'
-						/>
-					</svg>
-				</RondBackground> */}
-
 				<StyledGrainSvg
 					shapePath={
 						'M708 117C618 8.19997 95.5 -6.0002 46 88.5C-46 313.5 15.9 188.6 95.5 329C195 504.5 763 486 920 313.5C920 164 820.5 253 708 117Z'
 					}
+					color1={'#5ce1e6'}
+					color2={'#ff914d'}
 				/>
 
 				<TaglineLeft>Transformez votre idée en un MVP fonctionnel et solide,</TaglineLeft>
@@ -38,7 +25,7 @@ export default function App() {
 				<Description>
 					<HighlightedText>
 						Tout ce qu'il vous faut pour transformer <br />
-						votre idée en application :
+						votre idée en future application :
 					</HighlightedText>
 				</Description>
 
@@ -57,7 +44,10 @@ export default function App() {
 					</FeatureItem>
 				</Features>
 			</Div>
+
 			{/* <CtaButton onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}>Prendre rdv</CtaButton> */}
+
+			<PricesAndMarketing />
 
 			<OurMethod />
 
@@ -74,7 +64,7 @@ const AppContainer = styled.div`
 	flex-direction: column;
 	align-items: center;
 	background-color: #f6f6f6;
-
+	overflow: hidden;
 	gap: 40px;
 
 	@media (min-width: 768px) {
@@ -86,9 +76,9 @@ const Logo = styled.div`
 	font-family: 'League Spartan';
 	font-size: 24px;
 	font-weight: bold;
+	letter-spacing: -1.5px;
 	text-align: center;
 	margin: 20px;
-	letter-spacing: -1.5px;
 	color: #261812;
 
 	@media (min-width: 768px) {
@@ -101,7 +91,7 @@ const Tagline = styled.div`
 	font-family: 'Epilogue';
 	font-variation-settings: 'wght' 300;
 	width: 70%;
-	margin: 30px 0;
+	margin: 50px 0;
 	position: relative;
 	min-height: 150px;
 	z-index: 3;
