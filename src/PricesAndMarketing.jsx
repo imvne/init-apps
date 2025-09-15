@@ -85,7 +85,7 @@ const Phrase = styled.h3`
 const StyledGrainSvg1 = styled(GrainSvg)`
 	position: absolute;
 	z-index: 1;
-	top: 440px;
+	top: 420px;
 	transform: translateX(0%) scaleX(1.5) scaleY(1.3);
 	opacity: 0.7;
 
