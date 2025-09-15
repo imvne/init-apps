@@ -70,8 +70,9 @@ const Phrase = styled.h3`
 	text-align: center;
 	line-height: 40px;
 	z-index: 3;
-	width: 83%;
+	width: 75%;
 	margin-top: 50px;
+	margin-bottom: 30px;
 
 	@media (min-width: 768px) {
 		font-size: 50px;
@@ -84,7 +85,7 @@ const Phrase = styled.h3`
 const StyledGrainSvg1 = styled(GrainSvg)`
 	position: absolute;
 	z-index: 1;
-	top: 430px;
+	top: 440px;
 	transform: translateX(0%) scaleX(1.5) scaleY(1.3);
 	opacity: 0.7;
 
@@ -124,6 +125,7 @@ const Arguments = styled.div`
 	flex-direction: column;
 	align-items: center;
 	margin-top: 100px;
+
 	z-index: 4;
 
 	@media (min-width: 768px) {
