@@ -158,8 +158,7 @@ export default function OurMethod() {
 				<Text>
 					Nous vérifions que toutes les fonctionnalités fonctionnent parfaitement et corrigeons les
 					éventuels problèmes avant de vous livrer la version finale. Vous recevez une application
-					solide et prête à l’usage, avec la possibilité d’ajouter des fonctionnalités
-					supplémentaires plus tard.
+					prête à être testée et publiée.
 				</Text>
 
 				<Goal

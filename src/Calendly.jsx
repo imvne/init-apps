@@ -18,7 +18,7 @@ export default function Calendly() {
 			<div
 				className={'calendly-inline-widget'}
 				data-url={
-					'https://calendly.com/contact-initapps/30min?background_color=f6f6f6&text_color=050921&primary_color=1999c4'
+					'https://calendly.com/contact-initapps/30min?hide_event_type_details=1"background_color=f6f6f6&text_color=050921&primary_color=1999c4'
 				}
 				style={{ minWidth: '320px', height: '700px' }}></div>
 		</CalendlyContainer>
@@ -26,6 +26,5 @@ export default function Calendly() {
 }
 
 const CalendlyContainer = styled.div`
-	border: 1px solid black;
 	width: 100%;
 `
