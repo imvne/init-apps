@@ -26,6 +26,9 @@ export default function Footer() {
 				<StyledLink as={Link} to='/politique-confidentialite'>
 					Politique de confidentialité
 				</StyledLink>
+				<StyledLink as={Link} to='/cookies'>
+					Cookies
+				</StyledLink>
 			</LegalTexts>
 		</FooterContainer>
 	)
