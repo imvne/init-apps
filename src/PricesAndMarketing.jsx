@@ -72,18 +72,20 @@ const Phrase = styled.h3`
 	line-height: 40px;
 	z-index: 3;
 	width: 83%;
+	margin-top: 50px;
 
 	@media (min-width: 768px) {
 		font-size: 50px;
 		line-height: 60px;
 		width: 70%;
+		margin-top: 50px;
 	}
 `
 
 const StyledGrainSvg1 = styled(GrainSvg)`
 	position: absolute;
 	z-index: 1;
-	top: 42%;
+	top: 51%;
 	/* left: 50%; */
 	transform: translateX(-20%) scaleX(0.4) scaleY(0.5);
 	width: auto;
@@ -91,7 +93,7 @@ const StyledGrainSvg1 = styled(GrainSvg)`
 
 	@media (min-width: 768px) {
 		transform: translateX(-60%) scaleX(1.6) scaleY(1);
-		top: 115%;
+		top: 125%;
 		/* transform: translateX(-50%) scale(1); */
 	}
 `
@@ -99,7 +101,7 @@ const StyledGrainSvg1 = styled(GrainSvg)`
 const StyledGrainSvg2 = styled(GrainSvg)`
 	position: absolute;
 	z-index: 1;
-	top: 44%;
+	top: 53%;
 	/* left: 50%; */
 	transform: translateX(27%) scaleX(0.6) scaleY(0.5);
 	width: auto;
@@ -107,7 +109,7 @@ const StyledGrainSvg2 = styled(GrainSvg)`
 
 	@media (min-width: 768px) {
 		transform: translateX(60%) scaleX(1.3) scaleY(1);
-		top: 115%;
+		top: 125%;
 		/* transform: translateX(-50%) scale(1); */
 	}
 `
@@ -117,10 +119,11 @@ const Arguments = styled.div`
 	width: 83%;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 200px;
+	margin-top: 150px;
 
 	@media (min-width: 768px) {
 		width: 80%;
+		margin-top: 200px;
 	}
 `
 
