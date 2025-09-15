@@ -12,13 +12,13 @@ export default function Prices() {
 				color1={'#5ce1e6'}
 				color2={'#5ce1e6'}
 			/>
-			<StyledGrainSvg2
+			{/* <StyledGrainSvg2
 				shapePath={
 					'M708 117C618 8.19997 95.5 -6.0002 46 88.5C-46 313.5 15.9 188.6 95.5 329C195 504.5 763 486 920 313.5C920 164 820.5 253 708 117Z'
 				}
 				color1={'#5ce1e6'}
 				color2={'#5ce1e6'}
-			/>
+			/> */}
 			<Phrase>
 				Votre MVP prêt en 3 semaines
 				<br /> pour <b>1500€.</b>
@@ -85,11 +85,12 @@ const Phrase = styled.h3`
 const StyledGrainSvg1 = styled(GrainSvg)`
 	position: absolute;
 	z-index: 1;
-	top: 51%;
-	/* left: 50%; */
-	transform: translateX(-20%) scaleX(0.4) scaleY(0.5);
-	width: auto;
-	height: auto;
+	top: 300px;
+	transform: translateX(0%) scaleX(1.5) scaleY(1.3);
+	opacity: 0.7;
+
+	width: 100%;
+	height: 100%;
 
 	@media (min-width: 768px) {
 		transform: translateX(-60%) scaleX(1.6) scaleY(1);
@@ -98,28 +99,29 @@ const StyledGrainSvg1 = styled(GrainSvg)`
 	}
 `
 
-const StyledGrainSvg2 = styled(GrainSvg)`
-	position: absolute;
-	z-index: 1;
-	top: 53%;
-	/* left: 50%; */
-	transform: translateX(27%) scaleX(0.6) scaleY(0.5);
-	width: auto;
-	height: auto;
+// const StyledGrainSvg2 = styled(GrainSvg)`
+// 	position: absolute;
+// 	z-index: 1;
+// 	top: 53%;
+// 	/* left: 50%; */
+// 	transform: translateX(27%) scaleX(0.6) scaleY(0.5);
+// 	width: auto;
+// 	height: auto;
 
-	@media (min-width: 768px) {
-		transform: translateX(60%) scaleX(1.3) scaleY(1);
-		top: 125%;
-		/* transform: translateX(-50%) scale(1); */
-	}
-`
+// 	@media (min-width: 768px) {
+// 		transform: translateX(60%) scaleX(1.3) scaleY(1);
+// 		top: 125%;
+// 		/* transform: translateX(-50%) scale(1); */
+// 	}
+// `
 
 const Arguments = styled.div`
 	display: flex;
 	width: 83%;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 150px;
+	margin-top: 100px;
+	z-index: 4;
 
 	@media (min-width: 768px) {
 		width: 80%;
@@ -132,6 +134,7 @@ const Question = styled.h1`
 	font-variation-settings: 'wght' 500;
 	font-size: 24px;
 	line-height: 35px;
+	z-index: 3;
 
 	@media (min-width: 768px) {
 		font-size: 35px;

@@ -75,7 +75,7 @@ const Links = styled.div`
 
 const StyledLink = styled.a`
 	text-decoration: none;
-	font-size: 13px;
+	font-size: 10px;
 	opacity: 80%;
 	color: #8c95b8;
 	font-family: 'League Spartan', sans-serif;
@@ -102,9 +102,13 @@ const Icons = styled.div`
 const Copyright = styled.p`
 	font-family: 'League Spartan', sans-serif;
 	opacity: 80%;
-	font-size: 17px;
+	font-size: 14px;
 	margin: 10px;
 	line-height: 1;
+
+	@media (min-width: 768px) {
+		font-size: 17px;
+	}
 `
 
 const LegalTexts = styled.div`
