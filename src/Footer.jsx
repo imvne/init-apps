@@ -21,7 +21,7 @@ export default function Footer() {
 			<LegalTexts>
 				<Copyright>init apps. ©2025</Copyright>
 				<StyledLink as={Link} to='/mentions-legales'>
-					Mentions légales
+					Mentions légales?
 				</StyledLink>
 				<StyledLink as={Link} to='/politique-confidentialite'>
 					Politique de confidentialité
