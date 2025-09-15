@@ -8,7 +8,7 @@ export default function Form() {
 		fetch('/', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-			body: new URLSearchParams(form).toString(),
+			body: new URLSearchParams(new FormData(form)).toString(),
 		})
 			.then(() => {
 				document.getElementById('form-success').style.display = 'block'
