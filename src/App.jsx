@@ -4,6 +4,7 @@ import OurMethod from './OurMethod.jsx'
 import GrainSvg from './assets/grain'
 import Form from './Form.jsx'
 import PricesAndMarketing from './PricesAndMarketing.jsx'
+import Calendly from './Calendly.jsx'
 
 export default function App() {
 	return (
@@ -50,6 +51,8 @@ export default function App() {
 			<PricesAndMarketing />
 
 			<OurMethod />
+
+			<Calendly />
 
 			<Form />
 

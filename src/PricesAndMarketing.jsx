@@ -20,7 +20,7 @@ export default function Prices() {
 				color2={'#5ce1e6'}
 			/> */}
 			<Phrase>
-				Votre MVP prêt <u>en 4 semaines</u> pour <b>1500€.</b>
+				Votre MVP prêt <u>en 4 semaines</u> pour <b>1700€.</b>
 			</Phrase>
 			<Arguments>
 				<Question>
