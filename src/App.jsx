@@ -89,7 +89,7 @@ const Logo = styled.div`
 
 const Tagline = styled.div`
 	font-family: 'Epilogue';
-	font-variation-settings: 'wght' 400;
+	font-variation-settings: 'wght' 500;
 	width: 70%;
 	margin: 50px 0;
 	position: relative;

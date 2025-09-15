@@ -20,7 +20,7 @@ export default function Prices() {
 				color2={'#5ce1e6'}
 			/> */}
 			<Phrase>
-				Votre MVP prêt en 3 semaines
+				Votre MVP prêt en 4 semaines
 				<br /> pour <b>1500€.</b>
 			</Phrase>
 			<Arguments>
@@ -85,11 +85,11 @@ const Phrase = styled.h3`
 const StyledGrainSvg1 = styled(GrainSvg)`
 	position: absolute;
 	z-index: 1;
-	top: 500px;
+	top: 430px;
 	transform: translateX(0%) scaleX(1.5) scaleY(1.3);
 	opacity: 0.7;
 
-	width: 100%;
+	width: 60%;
 	height: 100%;
 
 	@media (min-width: 768px) {
