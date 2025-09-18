@@ -19,10 +19,11 @@ export default function App() {
 					color2={'#ff914d'}
 				/>
 
-				<TaglineLeft>Validez votre idée avant d'investir :</TaglineLeft>
+				<TaglineLeft>Arrêtez de rêver, lancez votre app</TaglineLeft>
 				<TaglineRight>
 					{' '}
-					grâce à un MVP fonctionnel, <br />
+					en 4 semaines, recevez un MVP
+					<br />
 					testable et prêt à évoluer.
 				</TaglineRight>
 			</Tagline>
@@ -57,13 +58,14 @@ export default function App() {
 			<OurMethod />
 
 			<CallToAction>
-				<p>Ne laissez pas votre idée rester abstraite.</p>
+				<p>Votre idée ne va pas se construire toute seule.</p>
 				<br />
 				<p>
-					En investissant dans un MVP, vous construisez les fondations de votre projet d'application
-					: un premier support pour tester et faire tester, une base solide fonctionnelle prête à
-					être déployée et à évoluer.
+					Prenons 30 minutes pour la clarifier et voir si on peut la transformer en MVP dès ce
+					mois-ci.
 				</p>
+				<br />
+				<p>Réservez votre appel gratuit maintenant</p>
 			</CallToAction>
 
 			<Calendly />
@@ -259,7 +261,7 @@ const StyledGrainSvg = styled(GrainSvg)`
 
 const CallToAction = styled.h1`
 	font-family: 'League Spartan';
-	width: 70%;
+	width: 60%;
 	text-align: center;
 
 	@media (min-width: 768px) {
